@@ -1,4 +1,4 @@
-# CNSD 2022 Website
+# DDS 2025 Website
 
-This is the main repository of the website of the Conference on Nonlinear Systems and Dynamics 2022, to be held in December 2022.
+This is the main repository for the DDS 2025 website.
 
