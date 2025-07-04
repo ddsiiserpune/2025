@@ -1,147 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DDS 2025</title>
+    <title>DDS 2025 - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script src="main.js"></script>
-    <meta charset="utf-8">
-
-    <!-- Load d3.js -->
-    <script src="https://d3js.org/d3.v4.js"></script>
-
-    <!-- Load d3-cloud -->
-    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
-
-    <!-- Create a div where the graph will take place -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-
-
-    <div class="big-container">
-
-        <header class="primary-header">
-            <div class="nav-container">
-                <div class="dds-logo-text">
-                    <a href="index.html">
-                    DDS <span class="year">2025</span>
-                    </a>
-                </div>
-                <nav class="primary-navigation">
-                    <ul role="list" class="nav-list">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="registration.html">Registration</a></li>
-                        <li><a href="speakers.html">Speakers</a></li>
-                        <li><a href=" venue.html">Venue</a></li>
-                        <li><a href="accomodation.html">Accomodation</a></li>
-                        <li><a href="organizers.html">Organizers</a></li>
-
-                    </ul>
-
-
-                </nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">DDS 2025</div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="registration.html" class="nav-link">Registration</a>
+                <a href="speakers.html" class="nav-link">Speakers</a>
+                <a href="venue.html" class="nav-link">Venue</a>
+                <a href="accommodation.html" class="nav-link">Accommodation</a>
+                <a href="organizers.html" class="nav-link">Organizers</a>
             </div>
-
-            <div class="topnav">
-                <!-- Navigation links (hidden by default) -->
-                <div id="myLinks">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="registration.html">Registration</a>
-                    <a href="speakers.html">Speakers</a>
-                    <a href=" venue.html">Venue</a>
-                    <a href="accomodation.html">Accomodation</a>
-                    <a href="organizers.html">Organizers</a>
-                </div>
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+        </div>
+    </nav>
+    
+    <main class="content">
+        <section class="hero-section">
+            <div class="hero-background">
+                <div class="geometric-shape shape-1"></div>
+                <div class="geometric-shape shape-2"></div>
+                <div class="geometric-line line-1"></div>
+                <div class="geometric-line line-2"></div>
             </div>
-        </header>
-
-        <main>
-
-            <section class="hero">
-                <!-- <img src="./mandelbrot.svg" alt="" class="mandelbrot"> -->
-                <img src="assets/time-series.svg" alt="" class="time-series">
-                <img src="assets/neural-net.svg" alt="" class="neural-net">
-                <img src="assets/network.svg" alt="" class="network">
-                <div class="rot-rect"></div>
-
-                <div class="even-column hero-container">
-                    <div class="mobile">
-                        <div class="logo" style="display: flex; align-items: center; gap: 1rem;">
-                            <img src="assets/DDS-logo.svg" alt="DDS Logo" class="dds-logo-img" style="float: left; margin-right: 1rem;" />
-                            <div>
-                                <h1 class="fs-primary-heading fw-bold home-title">DDS <span class="year">2025</span></h1>
-                                <h2 class="fs-secondary-heading fw-semibold home-subtitle">Data Dynamics Summit</h2>
-                            </div>
-                        </div>
-                        <p class="date">August 21 - 23, 2025</p>
-                        <p class="day">(Thursday - Saturday)</p>
-                        <p class="location">IISER Pune, India</p>
-                        <div class="cta">
-                            <a href="registration.html"><span class="warm-button">REGISTER NOW</span></a>
+            
+            <div class="hero-container">
+                <div class="hero-header">
+                    <div class="hero-meta">
+                        <div class="conference-year">2025</div>
+                        <div class="conference-type">International Conference</div>
+                    </div>
+                    <div class="hero-title-section">
+                        <h1 class="hero-title">Data Dynamics Summit</h1>
+                        <div class="hero-subtitle">
+                            <div class="subtitle-line"></div>
+                            <p>Emerging Ideas in Data-Driven Modeling</p>
                         </div>
                     </div>
-
                 </div>
-
-            </section>
-
-            <section class="about-dds">
-                <p class="text">
-                    Data Dynamics Summit (DDS) is a conference dedicated to emerging ideas in data-driven modeling. With
-                    data as its central theme, this meeting aims to bring together researchers from emerging areas where
-                    data-driven modeling is of paramount importance. It will provide a platform for young researchers to
-                    present their work and interact with experts in the field. The conference will also feature a poster
-                    session.
-                </p>
-            </section>
-
-            <section class="theme">
-                <div class="wave">
-
-                    <img src="assets/wave.svg" alt="">
-
+                
+                <div class="hero-content">
+                    <div class="hero-main-content">
+                        <div class="hero-description">
+                            <div class="description-highlight">
+                                <span class="highlight-text">A premier conference</span> dedicated to emerging ideas in data-driven modeling, bringing together leading researchers from diverse fields where data-driven approaches are transforming scientific understanding.
+                            </div>
+                        </div>
+                        
+                        <div class="hero-actions">
+                            <a href="registration.html" class="btn-primary">
+                                <span>Register Now</span>
+                                <div class="btn-glow"></div>
+                            </a>
+                            <a href="speakers.html" class="btn-secondary">View Program</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-sidebar">
+                        <div class="conference-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <div class="calendar-icon">
+                                        <div class="calendar-header">AUG</div>
+                                        <div class="calendar-date">21-23</div>
+                                    </div>
+                                </div>
+                                <div class="detail-content">
+                                    <div class="detail-label">Conference Dates</div>
+                                    <div class="detail-value">August 21-23, 2025</div>
+                                    <div class="detail-meta">Thursday - Saturday</div>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <div class="detail-icon">
+                                    <div class="location-icon">
+                                        <div class="location-marker"></div>
+                                        <div class="location-pulse"></div>
+                                    </div>
+                                </div>
+                                <div class="detail-content">
+                                    <div class="detail-label">Venue</div>
+                                    <div class="detail-value">IISER Pune, India</div>
+                                    <div class="detail-meta">Indian Institute of Science Education and Research</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- 
-                <svg width="2624" height="425" viewBox="0 0 2624 425" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M2623.7 98.9679C2623.7 98.9679 2457.95 -16.6955 2106 3.50005C1758.63 23.4331 1306.01 194.233 1004 343.5C396 644 -0.295898 3.50005 -0.295898 3.50005"
-                        stroke="black" />
-                </svg> -->
-
-            </section>
-        </main>
-
-
-    </div>
-
-    <div class="word-cloud">
-      <canvas id="wordCloudCanvas" width="500" height="350"></canvas>
-    </div>
-
-    <!-- Only load main.js, not wordcloud2.js -->
-    <script src="main.js"></script>
-
-    <div id="footer"></div>
+            </div>
+        </section>
+    </main>
     
+    <div class="theme-toggle-container">
+        <div class="toggle">
+            <input type="checkbox" aria-label="Toggle dark mode">
+            <span class="button"></span>
+            <span class="label">☀</span>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-header">
+                <div class="footer-brand">
+                    <h3>Data Dynamics Summit 2025</h3>
+                    <p>Emerging Ideas in Data-Driven Modeling</p>
+                </div>
+                <div class="footer-accent-line"></div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Site Map</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="registration.html">Registration</a>
+                        <a href="speakers.html">Speakers & Program</a>
+                        <a href="venue.html">Venue & Location</a>
+                        <a href="accommodation.html">Accommodation</a>
+                        <a href="organizers.html">Organizing Committee</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Info</h4>
+                    <div class="footer-links">
+                        <span class="footer-info">Conference Dates</span>
+                        <span class="footer-info">August 21-23, 2025</span>
+                        <span class="footer-info">IISER Pune, India</span>
+                        <span class="footer-info">Emerging Ideas in Data-Driven Modeling</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="footer-links">
+                        <span class="footer-info">info@dds2025.org</span>
+                        <span class="footer-info">+91 20 2590 8001</span>
+                        <span class="footer-address">
+                            IISER Pune<br>
+                            Dr. Homi Bhabha Road<br>
+                            Pune, Maharashtra 411008
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <span>&copy; 2025 Data Dynamics Summit. All rights reserved.</span>
+                </div>
+                <div class="footer-year">2025</div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
 </body>
-
 </html>
