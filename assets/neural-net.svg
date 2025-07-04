@@ -1,0 +1,28 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M300 380C311.046 380 320 371.046 320 360C320 348.954 311.046 340 300 340C288.954 340 280 348.954 280 360C280 371.046 288.954 380 300 380Z" fill="white"/>
+<path d="M300 300C311.046 300 320 291.046 320 280C320 268.954 311.046 260 300 260C288.954 260 280 268.954 280 280C280 291.046 288.954 300 300 300Z" fill="white"/>
+<path d="M300 220C311.046 220 320 211.046 320 200C320 188.954 311.046 180 300 180C288.954 180 280 188.954 280 200C280 211.046 288.954 220 300 220Z" fill="white"/>
+<path d="M300 60C311.046 60 320 51.0457 320 40C320 28.9543 311.046 20 300 20C288.954 20 280 28.9543 280 40C280 51.0457 288.954 60 300 60Z" fill="white"/>
+<path d="M300 140C311.046 140 320 131.046 320 120C320 108.954 311.046 100 300 100C288.954 100 280 108.954 280 120C280 131.046 288.954 140 300 140Z" fill="white"/>
+<path d="M113 170C124.046 170 133 161.046 133 150C133 138.954 124.046 130 113 130C101.954 130 93 138.954 93 150C93 161.046 101.954 170 113 170Z" fill="#FF725E" stroke="white" stroke-width="2"/>
+<path d="M113 270C124.046 270 133 261.046 133 250C133 238.954 124.046 230 113 230C101.954 230 93 238.954 93 250C93 261.046 101.954 270 113 270Z" fill="#FF725E" stroke="white" stroke-width="2"/>
+<path d="M488 220C499.046 220 508 211.046 508 200C508 188.954 499.046 180 488 180C476.954 180 468 188.954 468 200C468 211.046 476.954 220 488 220Z" fill="#6C63FF" stroke="white" stroke-width="2"/>
+<path d="M140 150L280 40" stroke="white" stroke-width="4"/>
+<path d="M140 250L280 40" stroke="white" stroke-width="4"/>
+<path d="M140 150L280 120" stroke="white" stroke-width="4"/>
+<path d="M140 250L280 120" stroke="white" stroke-width="4"/>
+<path d="M140 150L280 200" stroke="white" stroke-width="4"/>
+<path d="M140 250L280 200" stroke="white" stroke-width="4"/>
+<path d="M140 150L280 280" stroke="white" stroke-width="4"/>
+<path d="M140 250L280 280" stroke="white" stroke-width="4"/>
+<path d="M140 150L280 360" stroke="white" stroke-width="4"/>
+<path d="M140 250L280 360" stroke="white" stroke-width="4"/>
+<path d="M320 40L460 200" stroke="white" stroke-width="4"/>
+<path d="M320 120L460 200" stroke="white" stroke-width="4"/>
+<path d="M320 200H460" stroke="white" stroke-width="4"/>
+<path d="M320 280L460 200" stroke="white" stroke-width="4"/>
+<path d="M320 360L460 200" stroke="white" stroke-width="4"/>
+<path d="M30 150H80" stroke="white" stroke-width="4"/>
+<path d="M515 200H565" stroke="white" stroke-width="4"/>
+<path d="M30 250H80" stroke="white" stroke-width="4"/>
+</svg>
