@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDS 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="big-container">
+        <div class="extended-container">
+            <img src="assets/iiser-main-building.png" alt="" class="venue-banner">
+            <div class="venue-wave">
+
+                <img src="assets/wave.svg" alt="">
+
+            </div>
+        </div>
+
+        <div id="navbar"></div>
+        <main>
+
+            <section class="hero-venue">
+                <div class="rot-rect"></div>
+                <div>
+                    <h1 class="tagline">...where tomorrow's science begins today</h1>
+                    <div class="iiser-logo-name">
+                        <img src="assets/iiser-logo.svg" alt="" class="iiser-logo" id="iiser-logo">
+                        <div class="name-location">
+                            <h1 class="iiser-name">Indian Institute of Science</h1>
+                            <h1 class="iiser-name">Education and Research </h1>
+                            <p class="iiser-location">Pune, India</p>
+                        </div>
+
+                    </div>
+
+                    <div class="mobile-logo-name">
+                        <img src="assets/iiser-logo.svg" alt="" class="iiser-logo">
+                        <div class="name-location">
+                            <h1 class="iiser-name">Indian Institute of Science Education and Research</h1>
+                            <p class="iiser-location">Pune, India</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="about-cnsd">
+                <p class="venue-text">
+                    The Indian Institute of Science Education and Research (IISER) Pune is a premier institute dedicated
+                    to research and teaching in the basic sciences. Established with the dream of enabling students to
+                    shape the future of humanity by inventing novel and sustainable solutions for societal problems,
+                    IISER Pune provides a vibrant and intellectually stimulating environment for students at various
+                    levels of their academic careers.
+                </p>
+                <p class="more-info">
+                    To learn more about the institute, please visit our <a href="https://www.iiserpune.ac.in/"
+                        class="link-to-iiser-site">webpage</a>.
+                </p>
+            </section>
+
+            <section class="theme">
+                <h2 class="theme-title">How to reach</h2>
+                <div class="transparent-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: stretch; justify-content: center;">
+                    <!-- Map Tile -->
+                    <div id="map-tile" style="flex: 1 1 350px; min-width: 320px; max-width: 450px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 1rem; overflow: hidden; position: relative; min-height: 250px;">
+                        <div id="map-placeholder" style="width: 100%; height: 250px; display: flex; align-items: center; justify-content: center; cursor: pointer; background: #eee;">
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=IISER+Pune,Dr.+Homi+Bhabha+Road,Pune,Maharashtra&zoom=15&size=400x250&key=YOUR_API_KEY" alt="IISER Pune Map" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span style="position: absolute; left: 0; right: 0; bottom: 0; background: rgba(129, 3, 3, 0.4); color: #fff; text-align: center; padding: 0.5rem; font-size: 1rem;">Hover or move cursor to load interactive map</span>
+                        </div>
+                    </div>
+                    <!-- Address Tile -->
+                    <div style="flex: 1 1 300px; min-width: 250px; max-width: 400px; display: flex; flex-direction: column; justify-content: center; text-align: left;">
+                        <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--clr-accent-warm); margin-bottom: 0.5rem;">Indian Institute of Science Education and Research (IISER) Pune</h3>
+                        <p style="margin-bottom: 0.2rem;">Dr. Homi Bhabha Road</p>
+                        <p style="margin-bottom: 0.2rem;">Pune, Maharashtra 411008</p>
+                        <p style="margin-bottom: 1rem;">India</p>
+                        <a href="https://maps.google.com/?q=IISER+Pune,+Dr.+Homi+Bhabha+Road,+Pune,+Maharashtra" target="_blank" rel="noopener noreferrer" style="color: var(--clr-accent-warm); text-decoration: underline; font-weight: 500;">Open in Google Maps</a>
+                    </div>
+                </div>
+                <script>
+                // Lazy load Google Map on mouseover or touch
+                const mapTile = document.getElementById('map-tile');
+                const mapPlaceholder = document.getElementById('map-placeholder');
+                let mapLoaded = false;
+                function loadMap() {
+                    if (mapLoaded) return;
+                    mapLoaded = true;
+                    mapPlaceholder.innerHTML = `<iframe src='https://maps.google.com/maps?q=IISER+Pune,+Dr.+Homi+Bhabha+Road,+Pune,+Maharashtra&output=embed' width='100%' height='250' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>`;
+                }
+                mapTile.addEventListener('mouseenter', loadMap);
+                mapTile.addEventListener('touchstart', loadMap);
+                </script>
+            </section>
+        </main>
+
+
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>
