@@ -9,139 +9,85 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <script src="main.js"></script>
-    <meta charset="utf-8">
-
     <!-- Load d3.js -->
     <script src="https://d3js.org/d3.v4.js"></script>
-
     <!-- Load d3-cloud -->
     <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
-
-    <!-- Create a div where the graph will take place -->
-
+    <!-- Favicon links -->
+    <link rel="icon" href="assets/DDS-logo_noBG.png" type="image/png">
 </head>
 
 <body>
+    <!-- Fullscreen Hero Image Section -->
+    <section class="fullscreen-hero">
+        <div class="hero-overlay">
+            <div class="logo" style="display: flex; align-items: center;">
+            </div>
+        </div>
+        <div class="hero-info">
+            <p class="date">August 21 - 23, 2025</p>
+            <p class="day">(Thursday - Saturday)</p>
+            <p class="location">IISER Pune, India</p>
+            <div class="cta">
+                <a href="registration.html"><span class="glow-button">REGISTER NOW</span></a>
+            </div>
+        </div>
+    </section>
 
-
-
-    <div class="big-container">
-
+    <section class="big-container">
         <header class="primary-header">
             <div class="nav-container">
-                <div class="dds-logo-text">
+                <!-- <div class="dds-logo-text">
                     <a href="index.html">
                     DDS <span class="year">2025</span>
                     </a>
-                </div>
+                </div> -->
+                <!-- put the logo here -->
+                <div class="logo" style="display: flex; align-items: center;">
+                    <img src="assets/DDS-logo_noBG.svg" alt="DDS Logo" class="dds-logo-img" style="float: left; margin-right: 2rem; margin-top: 0.1rem; margin-left: -3rem;" />
+                    <div>
+                        <h1 class="fs-primary-heading fw-bold home-title">DDS <span class="year">2025</span></h1>
+                        <h2 class="fs-secondary-heading fw-semibold home-subtitle">Data Dynamics Summit</h2>
+                    </div>
                 <nav class="primary-navigation">
                     <ul role="list" class="nav-list">
-                        <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="registration.html">Registration</a></li>
                         <li><a href="speakers.html">Speakers</a></li>
-                        <li><a href=" venue.html">Venue</a></li>
+                        <li><a href="venue.html">Venue</a></li>
                         <li><a href="accomodation.html">Accomodation</a></li>
                         <li><a href="organizers.html">Organizers</a></li>
-
                     </ul>
-
-
                 </nav>
             </div>
-
             <div class="topnav">
-                <!-- Navigation links (hidden by default) -->
                 <div id="myLinks">
-                    <a href="index.html" class="active">Home</a>
                     <a href="registration.html">Registration</a>
                     <a href="speakers.html">Speakers</a>
-                    <a href=" venue.html">Venue</a>
+                    <a href="venue.html">Venue</a>
                     <a href="accomodation.html">Accomodation</a>
                     <a href="organizers.html">Organizers</a>
                 </div>
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
         </header>
-
-        <main>
-
-            <section class="hero">
-                <!-- <img src="./mandelbrot.svg" alt="" class="mandelbrot"> -->
-                <img src="assets/time-series.svg" alt="" class="time-series">
-                <img src="assets/neural-net.svg" alt="" class="neural-net">
-                <img src="assets/network.svg" alt="" class="network">
-                <div class="rot-rect"></div>
-
-                <div class="even-column hero-container">
-                    <div class="mobile">
-                        <div class="logo" style="display: flex; align-items: center; gap: 1rem;">
-                            <img src="assets/DDS-logo.svg" alt="DDS Logo" class="dds-logo-img" style="float: left; margin-right: 1rem;" />
-                            <div>
-                                <h1 class="fs-primary-heading fw-bold home-title">DDS <span class="year">2025</span></h1>
-                                <h2 class="fs-secondary-heading fw-semibold home-subtitle">Data Dynamics Summit</h2>
-                            </div>
-                        </div>
-                        <p class="date">August 21 - 23, 2025</p>
-                        <p class="day">(Thursday - Saturday)</p>
-                        <p class="location">IISER Pune, India</p>
-                        <div class="cta">
-                            <a href="registration.html"><span class="warm-button">REGISTER NOW</span></a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <section class="about-dds">
-                <p class="text">
-                    Data Dynamics Summit (DDS) is a conference dedicated to emerging ideas in data-driven modeling. With
-                    data as its central theme, this meeting aims to bring together researchers from emerging areas where
-                    data-driven modeling is of paramount importance. It will provide a platform for young researchers to
-                    present their work and interact with experts in the field. The conference will also feature a poster
-                    session.
-                </p>
-            </section>
-
-            <section class="theme">
-                <div class="wave">
-
-                    <img src="assets/wave.svg" alt="">
-
-                </div>
-
-                <!-- 
-                <svg width="2624" height="425" viewBox="0 0 2624 425" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M2623.7 98.9679C2623.7 98.9679 2457.95 -16.6955 2106 3.50005C1758.63 23.4331 1306.01 194.233 1004 343.5C396 644 -0.295898 3.50005 -0.295898 3.50005"
-                        stroke="black" />
-                </svg> -->
-
-            </section>
-        </main>
-
-
-    </div>
-
-    <div class="word-cloud">
-      <canvas id="wordCloudCanvas" width="500" height="350"></canvas>
-    </div>
-
-    <!-- Only load main.js, not wordcloud2.js -->
-    <script src="main.js"></script>
-
+        <div class="about-dds">
+            <h2 style="text-align: center; font-size: 2rem; font-weight: 300; margin-bottom: 1rem;">About DDS</h2>
+            <p class="text">
+                Data Dynamics Summit (DDS) is a conference dedicated to emerging ideas in data-driven modeling. With
+                data as its central theme, this meeting aims to bring together researchers from emerging areas where
+                data-driven modeling is of paramount importance. It will provide a platform for young researchers to
+                present their work and interact with experts in the field. The conference will also feature a poster
+                session.
+            </p>
+        </div>
+    </section>
     <div id="footer"></div>
-    
 </body>
 
 </html>

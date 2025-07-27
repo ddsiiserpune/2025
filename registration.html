@@ -16,28 +16,21 @@
     <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="main.js"></script>
+    <link rel="icon" href="assets/DDS-logo_noBG.png" type="image/png">
 </head>
 
 <body>
     <div class="big-container">
         <div class="extended-container">
-            <div class="venue-wave">
-
-                <img src="assets/wave.svg" alt="">
-
-            </div>
         </div>
         <div id="navbar"></div>
-
         <main>
-
             <section class="reg-hero">
-                <div class="rot-rect"></div>    
                 <div class="reg-left">
                     <h1 class="reg-title">DDS <span class="reg-span">Registration</span></h1>
                     <p class="reg-subtitle">Registration for DDS 2025 is now open.</p>
                     <div class="cta">
-                        <a href="#submit"><span class="warm-button">REGISTER NOW</span></a>
+                        <a href="#submit"><span class="glow-button">REGISTER NOW</span></a>
                     </div>
                 </div>
                 <div class="reg-right">
@@ -159,21 +152,53 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div class="four-buttons" id="submit">
-                    <a class="warm-button-small left-button" href="assets/latex-template.zip"> <span>Abstract Template</span></a>
-                    <a class="warm-button-small right-button" href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm"> <span>Fee Payment</span></a>
+  
+                <div class="center-payment">
+                    <a class="payment" href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" target="_blank" rel="noopener">
+                        <div class="left-side">
+                            <div class="pay_card">
+                                <div class="card-line"></div>
+                                <div class="buttons"></div>
+                            </div>
+                            <div class="post">
+                                <div class="post-line"></div>
+                                <div class="screen">
+                                    <div class="dollar">$</div>
+                                </div>
+                                <div class="numbers"></div>
+                                <div class="numbers-line2"></div>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="new">Fee Payment</div>
+                        </div>
+                    </a>
                 </div>
 
-
+                <!-- Abstract Template using the class abstract -->
+                <div class="center-payment">
+                    <a class="abstract" href="abstract_template.docx" target="_blank" rel="noopener">
+                        <div>
+                            <div class="pencil"></div>
+                            <div class="folder">
+                                <div class="top">
+                                    <svg viewBox="0 0 24 27">
+                                        <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+                                    </svg>
+                                </div>
+                                <div class="paper"></div>
+                            </div>
+                        </div>
+                        <span>Abstract Template</span>
+                    </a>
+                
             </section>
     </div>
 
         <!-- Registration Form -->
         <div class="embedform">
             <div class="centering-div">
-                <h2 style="font-size: 1.5rem; font-weight: 600; color: var(--clr-text-100); margin-bottom: 1rem; text-align: center;">Registration Form</h2>
+                <h2 class="reg-form-title">Registration Form</h2>
             </div>`
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePKpJoDcRlLWQdHqQ3DNmibwrpG-Jt785lDQF9_YHV8ByGfA/viewform?embedded=true" width="100%" height="1800" frameborder="0" marginheight="0" marginwidth="0" style="border: none; background: white;">Loading…</iframe>
         </div>

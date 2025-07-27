@@ -17,124 +17,82 @@
     <script src="https://d3js.org/d3.v4.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/DDS-logo_noBG.png" type="image/png">
 </head>
 
 <body>
 
     <div class="big-container">
-
         <div id="navbar"></div>
+        <div class="invited-speakers-container">
+            <h1 class="info-speakers"> Plenary Speakers</h1>
+            <p class="info-title">Names of plenary Speakers will be updated soon.</p>
+        </div>
 
-        <main>
+        <div class="invited-speakers-container">
+            <h1 class="info-speakers">Keynote Speakers</h1>
+        </div>
+        <!-- Keynote Talks -->
+        <div class="speakers-list">
+        <!-- Speaker 1 -->
+            <div class="speaker">
+            <img src="/images/speakers/placeholder.jpg" alt="Speaker 1" class="speaker-img">
+            <p class="speaker-name">Speaker 1</p>
+            <p class="affiliation">Institute 1</p>
+            </div>
+        <!-- Speaker 2 -->
+            <div class="speaker">
+            <img src="/images/speakers/placeholder.jpg" alt="Speaker 2" class="speaker-img">
+            <p class="speaker-name">Speaker 2</p>
+            <p class="affiliation">Institute 2</p>
+            </div>
+        <!-- Speaker 3 -->
+            <div class="speaker">
+            <img src="/images/speakers/placeholder.jpg" alt="Speaker 3" class="speaker-img">
+            <p class="speaker-name">Speaker 3</p>
+            <p class="affiliation">Institute 3</p>
+            </div>
+        <!-- Speaker 4 -->
+            <div class="speaker">
+            <img src="/images/speakers/placeholder.jpg" alt="Speaker 4" class="speaker-img">
+            <p class="speaker-name">Speaker 4</p>
+            <p class="affiliation">Institute 4</p>
+            </div>
 
-            <section class="hero">
-                <div class="rot-rect"></div>
+        </div>
 
-                <div class="even-column hero-container">
-                    <div class="mobile">
-                        <h1 class="fs-primary-heading fw-bold home-title">DDS <span class="year">Speakers</span></h1>
-                    </div>
-                </div>
-
-                <div class="invited-speakers-container">
-                    <h1 class="invited-speakers-title"> Plenary Speakers</h1>
-                    <p class="info">Names of plenary Speakers will be updated soon.</p>
-                </div>
-
-                <div class="invited-speakers-container">
-                    <h1 class="invited-speakers-title">Keynote Speakers</h1>
-                        </div>
-                <!-- Keynote Talks -->
-                <div class="speakers-list">
-                    <!-- Speaker 1 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 1" class="speaker-img">
-                        <p class="speaker-name">Speaker 1</p>
-                        <p class="affiliation">Institute 1</p>
-                        </div>
-                    <!-- Speaker 2 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 2" class="speaker-img">
-                        <p class="speaker-name">Speaker 2</p>
-                        <p class="affiliation">Institute 2</p>
-                        </div>
-                    <!-- Speaker 3 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 3" class="speaker-img">
-                        <p class="speaker-name">Speaker 3</p>
-                        <p class="affiliation">Institute 3</p>
-                        </div>
-                    <!-- Speaker 4 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 4" class="speaker-img">
-                        <p class="speaker-name">Speaker 4</p>
-                        <p class="affiliation">Institute 4</p>
-                        </div>
-                    <!-- Speaker 5 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 5" class="speaker-img">
-                        <p class="speaker-name">Speaker 5</p>
-                        <p class="affiliation">Institute 5</p>
-                        </div>
-                        </div>
-
-                <div class="invited-speakers-container">
-                    <h1 class="invited-speakers-title">Invited Speakers</h1>
-                        </div>
-                <!-- Invited Talks -->
-                <div class="speakers-list">
-                    <!-- Speaker 1 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 1" class="speaker-img">
-                        <p class="speaker-name">Speaker 1</p>
-                        <p class="affiliation">Institute 1</p>
-                        </div>
-                    <!-- Speaker 2 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 2" class="speaker-img">
-                        <p class="speaker-name">Speaker 2</p>
-                        <p class="affiliation">Institute 2</p>
-                        </div>
-                    <!-- Speaker 3 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 3" class="speaker-img">
-                        <p class="speaker-name">Speaker 3</p>
-                        <p class="affiliation">Institute 3</p>
-                        </div>
-                    <!-- Speaker 4 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 4" class="speaker-img">
-                        <p class="speaker-name">Speaker 4</p>
-                        <p class="affiliation">Institute 4</p>
-                        </div>
-                    <!-- Speaker 5 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 5" class="speaker-img">
-                        <p class="speaker-name">Speaker 5</p>
-                        <p class="affiliation">Institute 5</p>
-                        </div>
-                    <!-- Speaker 6 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 6" class="speaker-img">
-                        <p class="speaker-name">Speaker 6</p>
-                        <p class="affiliation">Institute 6</p>
-                        </div>
-                    <!-- Speaker 7 -->
-                        <div class="speaker">
-                        <img src="/images/speakers/placeholder.jpg" alt="Speaker 7" class="speaker-img">
-                        <p class="speaker-name">Speaker 7</p>
-                        <p class="affiliation">Institute 7</p>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-
+        <div class="invited-speakers-container">
+            <h1 class="info-speakers">Invited Speakers</h1>
+        </div>
+        <!-- Invited Talks -->
+        <div class="speakers-list">
+        <!-- Speaker 1 -->
+            <div class="speaker">
+            <img src="/images/speakers/placeholder.jpg" alt="Speaker 1" class="speaker-img">
+            <p class="speaker-name">Speaker 1</p>
+            <p class="affiliation">Institute 1</p>
+            </div>
+        <!-- Speaker 2 -->
+            <div class="speaker">
+            <img src="/images/speakers/placeholder.jpg" alt="Speaker 2" class="speaker-img">
+            <p class="speaker-name">Speaker 2</p>
+            <p class="affiliation">Institute 2</p>
+            </div>
+        <!-- Speaker 3 -->
+            <div class="speaker">
+            <img src="/images/speakers/placeholder.jpg" alt="Speaker 3" class="speaker-img">
+            <p class="speaker-name">Speaker 3</p>
+            <p class="affiliation">Institute 3</p>
+            </div>
+        <!-- Speaker 4 -->
+            <div class="speaker">
+            <img src="/images/speakers/placeholder.jpg" alt="Speaker 4" class="speaker-img">
+            <p class="speaker-name">Speaker 4</p>
+            <p class="affiliation">Institute 4</p>
+            </div>
+        </div>
     </div>
-
     <div id="footer"></div>
-
 </body>
 
 </html>
