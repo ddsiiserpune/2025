@@ -19,29 +19,18 @@
 </head>
 
 <body>
-
+    <nav class="extended-container"> <div id="navbar"></div></nav>
     <div class="big-container">
-        <div id="navbar"></div>
         <main>
-            <section class="venue-hero">
-                <div class="venue-banner-container">
-                    <section class="venue-hero"></section>
-                        <img src="assets/iiser-main-building.png" alt="IISER Pune Main Building" class="venue-banner">
-                    </section>
+            <section class="venue-hero-new">
+              <div class="venue-hero-banner-container">
+                <img src="assets/iiser-main-building.png" alt="IISER Pune Main Building" class="venue-hero-banner-img" />
+                <div class="venue-hero-gradient"></div>
+                <div class="venue-hero-content">
+                  <img src="assets/iiser-logo-color.svg" alt="IISER Pune Logo" class="venue-hero-logo" />
+                  <h1 class="venue-hero-tagline">...where tomorrow's science begins today</h1>
                 </div>
-                <div>
-                    <h1 class="tagline">...where tomorrow's science begins today</h1>
-                    <div class="iiser-logo-name">
-                        <img src="assets/iiser-logo-color.svg" alt="" class="iiser-logo" style="height: 14vh;">
-                        <div class="name-location">
-                            <h1 class="iiser-name">Indian Institute of Science</h1>
-                            <h1 class="iiser-name">Education and Research </h1>
-                            <p class="iiser-location">India</p>
-                        </div>
-                    </div>
-
-                </div>
-
+              </div>
             </section>
 
             <section class="about-iiser">
@@ -62,11 +51,8 @@
                 <h2 class="theme-title">How to reach</h2>
                 <div class="transparent-box" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: stretch; justify-content: center;">
                     <!-- Map Tile -->
-                    <div id="map-tile" style="flex: 1 1 350px; min-width: 320px; max-width: 450px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 1rem; overflow: hidden; position: relative; min-height: 250px;">
-                        <div id="map-placeholder" style="width: 100%; height: 250px; display: flex; align-items: center; justify-content: center; cursor: pointer; background: #eee;">
-                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=IISER+Pune,Dr.+Homi+Bhabha+Road,Pune,Maharashtra&zoom=15&size=400x250&key=YOUR_API_KEY" alt="IISER Pune Map" style="width: 100%; height: 100%; object-fit: cover;">
-                            <span style="position: absolute; left: 0; right: 0; bottom: 0; background: rgba(129, 3, 3, 0.4); color: #fff; text-align: center; padding: 0.5rem; font-size: 1rem;">Hover or move cursor to load interactive map</span>
-                        </div>
+                    <div id="map-tile" style="flex: 1 1 350px; min-width: 320px; max-width: 450px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #fff; border-radius: 1rem; overflow: hidden; position: relative; min-height: 250px;">
+                        <iframe src='https://maps.google.com/maps?q=IISER+Pune,+Dr.+Homi+Bhabha+Road,+Pune,+Maharashtra&output=embed' width='100%' height='250' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade' title='IISER Pune Map'></iframe>
                     </div>
                     <!-- Address Tile -->
                     <div style="flex: 1 1 300px; min-width: 250px; max-width: 400px; display: flex; flex-direction: column; justify-content: center; text-align: left;">
@@ -77,19 +63,27 @@
                         <a href="https://maps.google.com/?q=IISER+Pune,+Dr.+Homi+Bhabha+Road,+Pune,+Maharashtra" target="_blank" rel="noopener noreferrer" style="color: var(--clr-accent-warm); text-decoration: underline; font-weight: 500;">Open in Google Maps</a>
                     </div>
                 </div>
-                <script>
-                // Lazy load Google Map on mouseover or touch
-                const mapTile = document.getElementById('map-tile');
-                const mapPlaceholder = document.getElementById('map-placeholder');
-                let mapLoaded = false;
-                function loadMap() {
-                    if (mapLoaded) return;
-                    mapLoaded = true;
-                    mapPlaceholder.innerHTML = `<iframe src='https://maps.google.com/maps?q=IISER+Pune,+Dr.+Homi+Bhabha+Road,+Pune,+Maharashtra&output=embed' width='100%' height='250' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>`;
-                }
-                mapTile.addEventListener('mouseenter', loadMap);
-                mapTile.addEventListener('touchstart', loadMap);
-                </script>
+            </section>
+
+            <section class="travel-info">
+              <h2 class="travel-info-title">Travel Information</h2>
+              <div class="travel-cards">
+                <div class="travel-card">
+                  <span class="travel-icon" aria-label="By Air"><i class="fa fa-plane"></i></span>
+                  <h3>By Air</h3>
+                  <p>Pune International Airport (PNQ) is about 12 km from IISER Pune. Taxis and auto-rickshaws are available at the airport. Prepaid taxi counters are recommended for convenience and safety.</p>
+                </div>
+                <div class="travel-card">
+                  <span class="travel-icon" aria-label="By Train"><i class="fa fa-train"></i></span>
+                  <h3>By Train</h3>
+                  <p>Pune Railway Station is approximately 7 km from IISER Pune. Prepaid taxis and auto-rickshaws are available at the station. The campus is easily accessible by road from the station.</p>
+                </div>
+                <div class="travel-card">
+                  <span class="travel-icon" aria-label="By Road"><i class="fa fa-car"></i></span>
+                  <h3>By Road</h3>
+                  <p>IISER Pune is well connected by road. Use Google Maps for accurate driving directions. Ample parking is available for visitors on campus.</p>
+                </div>
+              </div>
             </section>
         </main>
 

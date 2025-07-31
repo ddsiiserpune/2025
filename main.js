@@ -32,4 +32,15 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navList = document.getElementById('main-nav-list');
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', function() {
+            const isOpen = navList.classList.toggle('open');
+            hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    }
+});
+
 
