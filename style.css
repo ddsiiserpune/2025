@@ -29,7 +29,7 @@
 }
 
 *{
-    border: 0.1rem solid red;
+    /* border: 0.1rem solid red; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
