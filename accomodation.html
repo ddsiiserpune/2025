@@ -14,10 +14,25 @@
     <link rel="icon" href="assets/DDS-logo_noBG.png" type="image/png">
 </head>
 <body>
-    <nav class="extended-container"> <div id="navbar"></div></nav>
+    <nav class="extended-container">
+        <!-- Add this just before .home-navbar-right -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="registration.html" class="nav-button">Registration</a>
+            <a href="speakers.html" class="nav-button">Speakers</a>
+            <a href="venue.html" class="nav-button">Venue</a>
+            <a href="accomodation.html" class="nav-button">Accomodation</a>
+            <a href="organizers.html" class="nav-button">Organizers</a>
+        </div>
+        <div id="navbar"></div>
+    </nav>  
     <div class="accomodation-center-container">
         <div class="accomodation-message">Details of accomodation will be updated shortly</div>
     </div>
-    <div id="footer"></div>
+    <div class="footer_ext" id="footer"></div>
 </body>
 </html>

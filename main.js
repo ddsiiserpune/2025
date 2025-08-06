@@ -32,15 +32,21 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 });
 
+// Remove all previous hamburger/nav event listeners and keep only this block for mobile nav toggle
+
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger-menu');
-    const navList = document.getElementById('main-nav-list');
-    if (hamburger && navList) {
-        hamburger.addEventListener('click', function() {
-            const isOpen = navList.classList.toggle('open');
-            hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    const hamburger = document.getElementById('hamburger-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (hamburger && mobileNav) {
+        hamburger.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent event bubbling
+            mobileNav.classList.toggle('open');
+        });
+        // Optional: close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+                mobileNav.classList.remove('open');
+            }
         });
     }
 });
-
-

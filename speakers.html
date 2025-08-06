@@ -1,98 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DDS 2025</title>
+    <title>Accomodation | DDS 2025</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <script src="main.js"></script>
-    <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
     <link rel="icon" href="assets/DDS-logo_noBG.png" type="image/png">
 </head>
-
 <body>
-    <nav class="extended-container"> <div id="navbar"></div></nav>
-    <div class="big-container">
-        <div class="invited-speakers-container">
-            <h1 class="info-speakers"> Plenary Speakers</h1>
-            <p class="info-title">Names of plenary Speakers will be updated soon.</p>
+    <nav class="extended-container">
+        <!-- Add this just before .home-navbar-right -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="registration.html" class="nav-button">Registration</a>
+            <a href="speakers.html" class="nav-button">Speakers</a>
+            <a href="venue.html" class="nav-button">Venue</a>
+            <a href="accomodation.html" class="nav-button">Accomodation</a>
+            <a href="organizers.html" class="nav-button">Organizers</a>
         </div>
-
-        <div class="invited-speakers-container">
-            <h1 class="info-speakers">Keynote Speakers</h1>
-            <p class="info-title">Names of keynote Speakers will be updated soon.</p>
-        </div>
-        <!-- Keynote Talks -->
-        <!-- <div class="speakers-list"> -->
-        <!-- Speaker 1 -->
-            <!-- <div class="speaker">
-            <img src="/images/speakers/placeholder.jpg" alt="Speaker 1" class="speaker-img">
-            <p class="speaker-name">Speaker 1</p>
-            <p class="affiliation">Institute 1</p>
-            </div> -->
-        <!-- Speaker 2 -->
-            <!-- <div class="speaker">
-            <img src="/images/speakers/placeholder.jpg" alt="Speaker 2" class="speaker-img">
-            <p class="speaker-name">Speaker 2</p>
-            <p class="affiliation">Institute 2</p>
-            </div> -->
-        <!-- Speaker 3 -->
-            <!-- <div class="speaker">
-            <img src="/images/speakers/placeholder.jpg" alt="Speaker 3" class="speaker-img">
-            <p class="speaker-name">Speaker 3</p>
-            <p class="affiliation">Institute 3</p>
-            </div> -->
-        <!-- Speaker 4 -->
-            <!-- <div class="speaker">
-            <img src="/images/speakers/placeholder.jpg" alt="Speaker 4" class="speaker-img">
-            <p class="speaker-name">Speaker 4</p>
-            <p class="affiliation">Institute 4</p>
-            </div> -->
-        <!-- </div> -->
-
-        <div class="invited-speakers-container">
-            <h1 class="info-speakers">Invited Speakers</h1>
-            <p class="info-title">Names of invited Speakers will be updated soon.</p>
-        </div>
-        <!-- Invited Talks -->
-        <div class="speakers-list">
-        <!-- Speaker 1 -->
-            <!-- <div class="speaker">
-            <img src="/images/speakers/placeholder.jpg" alt="Speaker 1" class="speaker-img">
-            <p class="speaker-name">Speaker 1</p>
-            <p class="affiliation">Institute 1</p>
-            </div> -->
-        <!-- Speaker 2 -->
-            <!-- <div class="speaker">
-            <img src="/images/speakers/placeholder.jpg" alt="Speaker 2" class="speaker-img">
-            <p class="speaker-name">Speaker 2</p>
-            <p class="affiliation">Institute 2</p>
-            </div> -->
-        <!-- Speaker 3 -->
-            <!-- <div class="speaker">
-            <img src="/images/speakers/placeholder.jpg" alt="Speaker 3" class="speaker-img">
-            <p class="speaker-name">Speaker 3</p>
-            <p class="affiliation">Institute 3</p>
-            </div> -->
-        <!-- Speaker 4 -->
-            <!-- <div class="speaker">
-            <img src="/images/speakers/placeholder.jpg" alt="Speaker 4" class="speaker-img">
-            <p class="speaker-name">Speaker 4</p>
-            <p class="affiliation">Institute 4</p>
-            </div> -->
-        </div>
+        <div id="navbar"></div>
+    </nav>  
+    <div class="accomodation-center-container">
+        <div class="accomodation-message">List of speakers will be updated shortly</div>
     </div>
-    <div id="footer"></div>
+    <div class="footer_ext" id="footer"></div>
 </body>
-
 </html>

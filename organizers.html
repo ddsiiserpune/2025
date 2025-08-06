@@ -19,58 +19,66 @@
 </head>
 
 <body>
-    <nav class="extended-container"> <div id="navbar"></div></nav>  
-    <div class="big-container">
-        <main>
-            <section class="hero">
-                <div class="even-column hero-container padding-6vh">
-                        <h1 class="reg-title">DDS <span class="reg-span">Organizers</span></h>
-                </div>
+    <nav class="extended-container">
+        <!-- Add this just before .home-navbar-right -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="registration.html" class="nav-button">Registration</a>
+            <a href="speakers.html" class="nav-button">Speakers</a>
+            <a href="venue.html" class="nav-button">Venue</a>
+            <a href="accomodation.html" class="nav-button">Accomodation</a>
+            <a href="organizers.html" class="nav-button">Organizers</a>
+        </div>
+        <div id="navbar"></div>
+    </nav>  
+    <section class="big-container">
+        <div class="even-column hero-container">
+                <h1 class="reg-title">DDS <span class="reg-span">Organizers</span></h>
+        </div>
 
 
-                <div class="invited-speakers-container">
-                    <h1 class="info-org">Faculty members</h1>
-                </div>
-                <div class="org-list">
-                    <div class="speaker">
-                        <img src="assets/team/santh.jpeg" alt="Speaker 1" class="speaker-img">
-                        <p class="speaker-name">M S Santhanam</p>
-                        <p class="affiliation">Physics, IISER Pune</p>
-                    </div>
-                    <div class="speaker">
-                        <img src="assets/team/pranay.jpg" alt="Speaker 2" class="speaker-img">
-                        <p class="speaker-name">Pranay Goel</p>
-                        <p class="affiliation">Biology, IISER Pune</p>
-                    </div>
-                </div>
+        <div class="invited-speakers-container">
+            <h1 class="info-org">Faculty members</h1>
+        </div>
+        <div class="org-list">
+            <div class="speaker">
+                <img src="assets/team/santh.jpeg" alt="Speaker 1" class="speaker-img">
+                <p class="speaker-name">M S Santhanam</p>
+                <p class="affiliation">Physics, IISER Pune</p>
+            </div>
+            <div class="speaker">
+                <img src="assets/team/pranay.jpg" alt="Speaker 2" class="speaker-img">
+                <p class="speaker-name">Pranay Goel</p>
+                <p class="affiliation">Biology, IISER Pune</p>
+            </div>
+        </div>
 
-                <div class="invited-speakers-container">
-                    <h1 class="info-org">Ph.D. students and postdocs</h1>
-                </div>
-                <div class="speakers-list">
-                    <div class="speaker">
-                        <img src="assets/team/sreeram.jpeg" alt="Speaker 1" class="speaker-img">
-                        <p class="speaker-name">Sreeram P G</p>
-                    </div>
-                    <div class="speaker">
-                        <img src="assets/team/ritam.jpeg" alt="Speaker 2" class="speaker-img">
-                        <p class="speaker-name">Ritam Pal</p>
-                    </div>
-                    <div class="speaker">
-                        <img src="assets/team/bharathi.jpeg" alt="Speaker 2" class="speaker-img">
-                        <p class="speaker-name">Bharathi Kannan</p>
-                    </div>
-                    <div class="speaker">
-                        <img src="assets/team/nisarg.jpg" alt="Speaker 3" class="speaker-img">
-                        <p class="speaker-name">Nisarg Vyas</p>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-
-    </div>
+        <div class="invited-speakers-container">
+            <h1 class="info-org">Ph.D. students and postdocs</h1>
+        </div>
+        <div class="speakers-list">
+            <div class="speaker">
+                <img src="assets/team/sreeram.jpeg" alt="Speaker 1" class="speaker-img">
+                <p class="speaker-name">Sreeram P G</p>
+            </div>
+            <div class="speaker">
+                <img src="assets/team/ritam.jpeg" alt="Speaker 2" class="speaker-img">
+                <p class="speaker-name">Ritam Pal</p>
+            </div>
+            <div class="speaker">
+                <img src="assets/team/bharathi.jpeg" alt="Speaker 2" class="speaker-img">
+                <p class="speaker-name">Bharathi Kannan</p>
+            </div>
+            <div class="speaker">
+                <img src="assets/team/nisarg.jpg" alt="Speaker 3" class="speaker-img">
+                <p class="speaker-name">Nisarg Vyas</p>
+            </div>
+        </div>
+    </section>
     <div id="footer"></div>
 </body>
 

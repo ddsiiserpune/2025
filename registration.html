@@ -1,205 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DDS 2025</title>
+    <title>Accomodation | DDS 2025</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="main.js"></script>
     <link rel="icon" href="assets/DDS-logo_noBG.png" type="image/png">
 </head>
-
 <body>
-    <nav class="extended-container"> <div id="navbar"></div></nav>
-    <div class="big-container">
-        <main>
-            <section class="reg-hero">
-                <div class="reg-left">
-                    <h1 class="reg-title">DDS <span class="reg-span">Registration</span></h1>
-                    <p class="reg-subtitle">Registration for DDS 2025 is now open.</p>
-                    <p style="font-size: 1.2rem; font-weight: 300; margin-top: 4rem; color: #aa0404;"> Please read the intructions given below to proceed with the registration. </p>
-                </div>
-                <div class="reg-right">
-                    <table>
-                      <tr>
-                        <th>Event</th>
-                        <th>Deadline</th>
-                      </tr>
-                      <tr>
-                        <td>Abstract Submission</td>
-                        <td>May 15, 2025</td>
-                      </tr>
-                      <tr>
-                        <td>Notification of Acceptance</td>
-                        <td>June 15, 2025</td>
-                      </tr>
-                      <tr>
-                        <td>Early Bird Registration</td>
-                        <td>July 15, 2025</td>
-                      </tr>
-                      <tr>
-                        <td>Registration</td>
-                        <td>August 1, 2025</td>
-                      </tr>
-                    </table>
-                  </div>
-
-
-            </section>
-
-            <section class="reg-info">
-                <div class="centering-div padding-10vh">
-                    <h1 class="reg-info-title">Registration information</h1>
-                </div>
-
-                <div class="two-column">
-
-                    <div class="payment-info">
-                        <div class="centering-div">
-                            <h2 class="payment-title">Payment information</h2>
-                        </div>
-                        <div class="flow-chart-payment">
-
-                            <div class="left">
-                                <p class="flow-text">Click fee payment button below. </p>
-                            </div>
-
-
-                            <div class="right">
-                                <p class="flow-text">Click the checkbox and proceed.</p>
-                            </div>
-
-                            <div class="left">
-                                <p class="flow-text">Select State - Maharashtra, Type - Educational institutions and
-                                    go.</p>
-                            </div>
-
-
-                            <div class="right">
-                                <p class="flow-text">Select - Indian Institute of Science Education and Research and
-                                    submit.
-                                </p>
-                            </div>
-
-                            <div class="left">
-                                <p class="flow-text">Select category - (Faculty/Scientist) or (Student/Post Doc).</p>
-                            </div>
-
-
-                            <div class="right">
-                                <p class="flow-text">Fill the form and pay the fees.</p>
-                            </div>
-
-                            <div class="left">
-                                <p class="flow-text">Save or print the recipt.</p>
-                            </div>
-
-
-                            <div class="right">
-                                <p class="flow-text">Put the DU number, and the recipt in the registration form.</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="reg-fee card">
-                        <div class="centering-div">
-                            <h1 class="reg-fee-title">Registration fee</h2>
-                        </div>
-
-                        <div class="df1">
-                            <div class="designation">
-                                <h2 class="d1">Student</h2>
-                                <h2 class="d2">Post Doc</h2>
-                            </div>
-                            <div class="fee">
-                                <h2 class="f1">INR 4720</h2>
-                                <h2 class="f2">(4000 + 18% GST)</h2>
-                            </div>
-                        </div>
-
-
-                        <div class="df1">
-                            <div class="designation">
-                                <h2 class="d1">Faculty</h2>
-                                <h2 class="d2">Scientist</h2>
-                            </div>
-                            <div class="fee">
-                                <h2 class="f1">INR 7080</h2>
-                                <h2 class="f2">(6000 + 18% GST)</h2>
-                            </div>
-                        </div>
-                        <div class="df3">
-                            <p class="fee-include">Registration fee includes breakfasts, lunches, dinners, tea-snacks
-                                and conference-kit. Registration fee is non-refundable. </p>
-                            <p class="fee-exclude">Registration fee does not include accommodation. To know more about
-                                accomodation please visit the accomodation
-                                <a href="accomodation.html" class="active">page.</a></p>
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="center-payment">
-                    <a class="payment" href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" target="_blank" rel="noopener">
-                        <div class="left-side">
-                            <div class="pay_card">
-                                <div class="card-line"></div>
-                                <div class="buttons"></div>
-                            </div>
-                            <div class="post">
-                                <div class="post-line"></div>
-                                <div class="screen">
-                                    <div class="dollar">$</div>
-                                </div>
-                                <div class="numbers"></div>
-                                <div class="numbers-line2"></div>
-                            </div>
-                        </div>
-                        <div class="right-side">
-                            <div class="new"> Fee Payment</div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Abstract Template using the class abstract -->
-                <div class="center-payment">
-                    <a class="abstract" href="abstract_template.docx" target="_blank" rel="noopener">
-                        <div>
-                            <div class="pencil"></div>
-                            <div class="folder">
-                                <div class="top">
-                                    <svg viewBox="0 0 24 27">
-                                        <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
-                                    </svg>
-                                </div>
-                                <div class="paper"></div>
-                            </div>
-                        </div>
-                        <span>Abstract Template</span>
-                    </a>
-                
-            </section>
-    </div>
-
-        <!-- Registration Form -->
-        <div class="embedform">
-            <div class="centering-div">
-                <h2 class="reg-form-title">Registration Form</h2>
-            </div>`
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePKpJoDcRlLWQdHqQ3DNmibwrpG-Jt785lDQF9_YHV8ByGfA/viewform?embedded=true" width="100%" height="1800" frameborder="0" marginheight="0" marginwidth="0" style="border: none; background: white;">Loading…</iframe>
+    <nav class="extended-container">
+        <!-- Add this just before .home-navbar-right -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="registration.html" class="nav-button">Registration</a>
+            <a href="speakers.html" class="nav-button">Speakers</a>
+            <a href="venue.html" class="nav-button">Venue</a>
+            <a href="accomodation.html" class="nav-button">Accomodation</a>
+            <a href="organizers.html" class="nav-button">Organizers</a>
         </div>
-
-    <div id="footer"></div>
+        <div id="navbar"></div>
+    </nav>  
+    <div class="accomodation-center-container">
+        <div class="accomodation-message">Registration details will be updated shortly</div>
+    </div>
+    <div class="footer_ext" id="footer"></div>
 </body>
-
 </html>

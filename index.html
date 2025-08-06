@@ -21,49 +21,61 @@
     <link rel="icon" href="assets/DDS-logo_noBG.png" type="image/png">
 </head>
 
+
 <body>
-     <!-- Fullscreen Hero Image Section -->
-     <section class="fullscreen-hero">
+    <section class="fullscreen-hero">
         <div class="hero-overlay">
-            <div class="logo" style="display: flex; align-items: center;">
-            </div>
-            <div class="hero-catchline">
-                <div class="catchline-title">DDS 2025</div>
-                <div class="catchline-subtitle">Data Dynamics Summit</div>
-                <div class="catchline-punch">A catchy punch line to be decided later</div>
+            <!--in this div we put the overlay color, then we put the conference name and the catchline. Bottom right we put the date, day and location. -->
+            <div class="hero-content">
+                <h1 class="hero-abb">DDS 2025</h1>
+                <h2 class="hero-title">Data Dynamics Summit</h2>
+                <!-- <h3 class="hero-subtitle">A catchy punch line to be decided later</h3> -->
             </div>
             <div class="hero-info">
-                <p class="date">August 21 - 23, 2025</p>
-                <p class="day">(Thursday - Saturday)</p>
-                <p class="location">IISER Pune, India</p>
+                <p>October 3 - 5, 2025</p>
+                <p>(Friday - Sunday)</p>
+                <p>IISER Pune, India</p>
+            </div>
+            <!-- Bouncing arrow for scroll indication -->
+            <div class="scroll-down-arrow">
+                <span></span>
             </div>
         </div>
     </section>
-
     <section class="home-container">
-        <header class="primary-header">
-            <div class="home-nav-container">
-                <div class="logo" style="display: flex; align-items: center;">
-                    <img src="assets/DDS-logo_noBG.svg" alt="DDS Logo" class="dds-logo-img" style="float: left; margin-right: 2rem; margin-top: 0.1rem; margin-left: -3rem;" />
-                    <div>
-                        <h1 class="fs-primary-heading fw-bold home-title">DDS <span class="year">2025</span></h1>
-                        <h2 class="fs-secondary-heading fw-semibold home-subtitle">Data Dynamics Summit</h2>
-                    </div>
-                    <nav class="home-primary-navigation">
-                        <ul role="list" class="nav-list">
-                            <li><a href="registration.html">Registration</a></li>
-                            <li><a href="speakers.html">Speakers</a></li>
-                            <li><a href="venue.html">Venue</a></li>
-                            <li><a href="accomodation.html">Accomodation</a></li>
-                            <li><a href="organizers.html">Organizers</a></li>
-                        </ul>
-                    </nav>
+        <!-- Add this just before .home-navbar-right -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="registration.html" class="nav-button">Registration</a>
+            <a href="speakers.html" class="nav-button">Speakers</a>
+            <a href="venue.html" class="nav-button">Venue</a>
+            <a href="accomodation.html" class="nav-button">Accomodation</a>
+            <a href="organizers.html" class="nav-button">Organizers</a>
+        </div>
+        <!--in this one we put a home-navbar with the logo and the conference name on the left. Below this we put the about dds section. -->
+        <nav class="home-navbar">
+            <div class="home-navbar-left">
+                <img src="assets/DDS-logo_noBG.svg" alt="DDS Logo" class="dds-logo-img" />
+                <div class="nav-titles">
+                    <h2><span>DDS</span> <span style="color: rgb(39, 7, 62); font-weight: 600;">2025</span></h2>
+                    <h3>Data Dynamics Summit</h3>
                 </div>
             </div>
-        </header>
+            <div class="home-navbar-right">
+                <a href="registration.html" class="nav-button">Registration</a>
+                <a href="speakers.html" class="nav-button">Speakers</a>
+                <a href="venue.html" class="nav-button">Venue</a>
+                <a href="accomodation.html" class="nav-button">Accomodation</a>
+                <a href="organizers.html" class="nav-button">Organizers</a>
+            </div>
+        </nav>
         <div class="about-dds">
-            <h2 style="text-align: center; font-size: 2rem; font-weight: 300; margin-bottom: 1rem;">About DDS</h2>
-            <p class="text">
+            <h2 class = "hero-title" style="text-align: center;">About DDS</h2>
+            <p style="padding-top: 1vh; padding-bottom: 1vh;">
                 Data Dynamics Summit (DDS) is a conference dedicated to emerging ideas in data-driven modeling. With
                 data as its central theme, this meeting aims to bring together researchers from emerging areas where
                 data-driven modeling is of paramount importance. It will provide a platform for young researchers to
@@ -71,8 +83,6 @@
                 session.
             </p>
         </div>
-        <div id="footer"></div>
+        <div class="footer_ext" id="footer"></div>
     </section>
 </body>
-
-</html>
